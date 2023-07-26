@@ -89,10 +89,12 @@ function game() {
     console.log(
       `And the winner is Player with a total score of ${playerScore} against Computer's ${compScore}`
     );
-  } else {
+  } else if (playerScore < compScore) {
     console.log(
       `And the winner is Computer with a total score of ${compScore} against Player's ${playerScore}`
     );
+  } else {
+    console.log(`It's a draw! With both scoring ${playerScore} each.`);
   }
 }
 
